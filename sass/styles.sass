@@ -19,35 +19,66 @@ section
     min-height: 100vh
     display: flex
     flex-direction: column
-    justify-content: flex-start
+    // justify-content: flex-start
 
 header
-    background-color: variables.$blue
-
-    .logo-header
-        max-width: 3rem
-        max-height:150px
-        width: auto
-        height: auto
+    background: variables.$blue
+    position: relative
+    width: 100%
+    padding: 1.875rem 6.5rem
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
 
     .navigation a
-        color: variables.$green
         font-family: 'Ultra'
+        color: variables.$green
         text-decoration: none
         letter-spacing: 0.1rem
         padding: 0.2rem 0.9rem
         transition: 0.3s
         transition-property: color
-        
     a:hover
         color: variables.$green-light
-    a:not(:last-child)
-        margin-right: 1.875rem
+    // a:not(:last-child)
+    //     margin-right: 1.875rem
 
 
-.intro
+.logo-header
+        position: relative
+        max-width: 3rem
+        max-height: 9.375rem
+        width: auto
+        height: auto
+
+
+.content
     max-width: 650px
     margin: 60px 100px
+
+    .intro h2
+        color: variables.$green
+        font-family: 'DM Sans'
+        font-size: 3.4375rem
+        font-weight: 800
+        letter-spacing: 0.2rem
+        line-height: 3.75rem
+        margin-bottom: 1.875rem
+    
+    .intro-btn
+        color: variables.$white
+        background: variables.$purple
+        // text-decoration: none
+        font-weight: 700
+        letter-spacing: 2px
+        padding: 10px 20px
+        border-radius: 5px
+        transition: 0.3s
+        transition-property: background
+
+
+    
 
 
 

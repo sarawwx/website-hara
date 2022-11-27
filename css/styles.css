@@ -15,21 +15,21 @@ section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 header {
-  background-color: #61b1c2;
-}
-header .logo-header {
-  max-width: 3rem;
-  max-height: 150px;
-  width: auto;
-  height: auto;
+  background: #61b1c2;
+  position: relative;
+  width: 100%;
+  padding: 1.875rem 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 header .navigation a {
-  color: #5A6C37;
   font-family: "Ultra";
+  color: #5A6C37;
   text-decoration: none;
   letter-spacing: 0.1rem;
   padding: 0.2rem 0.9rem;
@@ -39,13 +39,37 @@ header .navigation a {
 header a:hover {
   color: #848d62;
 }
-header a:not(:last-child) {
-  margin-right: 1.875rem;
+
+.logo-header {
+  position: relative;
+  max-width: 3rem;
+  max-height: 9.375rem;
+  width: auto;
+  height: auto;
 }
 
-.intro {
+.content {
   max-width: 650px;
   margin: 60px 100px;
+}
+.content .intro h2 {
+  color: #5A6C37;
+  font-family: "DM Sans";
+  font-size: 3.4375rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  line-height: 3.75rem;
+  margin-bottom: 1.875rem;
+}
+.content .intro-btn {
+  color: #fff;
+  background: #8201A6;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
 }
 
 label {
