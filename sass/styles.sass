@@ -1,3 +1,62 @@
-div
-    background-color: purple
-    font-family: 'DM Sans'
+@use 'variables'
+@use 'mixins'
+
+///////////////////////////// geral
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Dm Sans'
+
+body
+    background-color: variables.$cream
+
+//////////////////////////////
+
+section 
+    position: relative
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+
+header
+    background-color: variables.$blue
+
+    .logo-header
+        max-width: 3rem
+        max-height:150px
+        width: auto
+        height: auto
+
+    .navigation a
+        color: variables.$green
+        font-family: 'Ultra'
+        text-decoration: none
+        letter-spacing: 0.1rem
+        padding: 0.2rem 0.9rem
+        transition: 0.3s
+        transition-property: color
+        
+    a:hover
+        color: variables.$green-light
+    a:not(:last-child)
+        margin-right: 1.875rem
+
+
+.intro
+    max-width: 650px
+    margin: 60px 100px
+
+
+
+
+
+label
+    display: none
+
+
+#check
+    z-index: 3
+    display: none
