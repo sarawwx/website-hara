@@ -71,6 +71,9 @@ header a:hover {
   transition: 0.3s;
   transition-property: background;
 }
+.content .intro-btn:hover {
+  background: #848d62;
+}
 
 label {
   display: none;
