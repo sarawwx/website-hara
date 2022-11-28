@@ -28,31 +28,36 @@ section
 
 header
     background: variables.$blue
-    position: relative
+    // position: relative
     width: 100%
-    padding: 1.875rem 6.5rem
+    padding: 1.5rem 6.5rem
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
 
-    .navigation a
-        font-family: 'Ultra'
-        color: variables.$green
-        text-decoration: none
-        letter-spacing: 0.1rem
-        padding: 0.2rem 0.9rem
-        transition: 0.3s
-        transition-property: color
-    a:hover
-        color: variables.$green-light
-    // a:not(:last-child)
-    //     margin-right: 1.875rem
+    .navigation 
+        display: flex
+        align-items: center
+        
+        a
+            font-family: 'Ultra'
+            color: variables.$green
+            text-decoration: none
+            letter-spacing: 0.1rem
+            padding: 0.2rem 0.9rem
+            transition: 0.3s
+            transition-property: color
+        a:hover
+            color: variables.$green-light
+        // a:not(:last-child)
+        //     margin-right: 1.875rem
 
 .logo-header
         position: relative
-        max-width: 3rem
+        max-width: 5rem
         max-height: 9.375rem
+        padding: 0 1rem
         width: auto
 
 .content
@@ -80,7 +85,7 @@ header
         transition-property: background
         
     .intro-btn:hover
-        background: variables.$green-light
+        background: variables.$orange
 
 .logo01
     display: none
@@ -110,7 +115,7 @@ label
             display: none
 
         label
-            color: variables.$green
+            color: variables.$orange
             display: block
             font-size: 25px
             cursor: pointer
@@ -123,7 +128,7 @@ label
             .menu-btn
                 position: relative
         label:hover
-            color: variables.$green-light
+            color: variables.$green
 
     .logo-header
         display: none 
@@ -138,7 +143,7 @@ label
     #check:checked ~header .navigation
         z-index: 2
         position: fixed
-        background: rgba(252, 199, 145, 0.9)
+        background: rgba(124, 180, 215, 0.970) 
         top: 0
         bottom: 0
         left: 0
@@ -148,9 +153,8 @@ label
         justify-content: center
         align-items: center
     #check:checked ~ header .navigation a
-        font-weight: 800
-        margin-right: 0
-        margin-bottom: 3.125rem
+        // margin-right: 0
+        margin-bottom: 3rem
         letter-spacing: 0.5rem
     #check:checked ~ header label .menu-btn
         display: none
