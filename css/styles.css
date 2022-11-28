@@ -9,6 +9,11 @@ body {
   background-color: #F6EEE0;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 2px #61b1c2;
+}
+
 section {
   position: relative;
   width: 100%;
@@ -119,6 +124,15 @@ label {
   header label:hover {
     color: #848d62;
   }
+  .logo-header {
+    display: none;
+  }
+  .content .intro h2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
   #check:checked ~ header .navigation {
     z-index: 2;
     position: fixed;
@@ -146,18 +160,19 @@ label {
     display: block;
     position: fixed;
   }
-  .logo-header {
-    display: none;
-  }
-  .content .intro h2 {
-    font-size: 2.8125rem;
-    line-height: 50px;
-  }
 }
 @media (max-width: 560px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 200%;
+  }
+  .content .intro {
+    justify-content: space-between;
+  }
   .content .intro h2 {
-    font-size: 35px;
-    line-height: 40px;
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }
 
