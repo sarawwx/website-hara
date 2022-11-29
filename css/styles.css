@@ -14,15 +14,6 @@ body {
   box-shadow: 0 0 0 2px #61b1c2;
 }
 
-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
 header {
   background: #61b1c2;
   width: 100%;
@@ -57,6 +48,13 @@ header .navigation a:hover {
   width: auto;
 }
 
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .content {
   max-width: 90%;
   margin: 5rem 10rem;
@@ -82,7 +80,7 @@ header .navigation a:hover {
   font-weight: 800;
   letter-spacing: 0.2rem;
   line-height: 3.75rem;
-  margin-bottom: 5rem;
+  margin-bottom: 10rem;
   margin-right: 3rem;
 }
 .intro .intro-text .intro-btn {
@@ -117,6 +115,27 @@ label {
   display: none;
 }
 
+@media (max-width: 1400px) {
+  .intro {
+    text-align: center;
+    width: 100%;
+  }
+  .intro .intro-text {
+    width: 100%;
+    align-items: center;
+  }
+  .intro .intro-text .intro-slogan {
+    margin-bottom: 3rem;
+    margin-right: 0;
+  }
+  .intro .intro-text .intro-btn {
+    margin-bottom: 4rem;
+  }
+  .intro .img-intro {
+    margin: auto;
+    width: 70%;
+  }
+}
 @media (max-width: 960px) {
   header {
     justify-content: space-between;

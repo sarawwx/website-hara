@@ -16,16 +16,7 @@ body
     box-shadow: 0 0 0 2px variables.$blue
 
 
-//////////////////////////////
-
-section 
-    position: relative
-    width: 100%
-    min-height: 100vh
-    display: flex
-    flex-direction: column
-    justify-content: flex-start
-
+///////////// header
 header
     background: variables.$blue
     // position: relative
@@ -59,11 +50,21 @@ header
         max-height: 9.375rem
         padding: 0 1rem
         width: auto
+////////////////// fim header
+
+section 
+    // position: relative
+    width: 100%
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    // justify-content: flex-start
 
 .content
     max-width: 90%
     margin: 5rem 10rem
 
+////////////////// introdução
 .intro 
         display: flex
         flex-direction: row
@@ -73,7 +74,6 @@ header
         
         .intro-text
             width: 60%
-            // padding-bottom: 1.875rem
             display: flex
             flex-direction: column
             justify-content: center
@@ -85,7 +85,7 @@ header
                 font-weight: 800
                 letter-spacing: 0.2rem
                 line-height: 3.75rem
-                margin-bottom: 5rem
+                margin-bottom: 10rem
                 margin-right: 3rem
             .intro-btn
                 color: variables.$white
@@ -104,24 +104,40 @@ header
 
         .img-intro
             width: 40%
-            // max-width: 30rem
-            // max-height: 30rem
-            // padding: 0 1rem
-            // width: auto
-    
-    
+//////////////////////////////// fim introdução
 
 .logo01
     display: none
-
 label
     display: none
-
 #check
     z-index: 3
     display: none
 
 ///////////////////////////// responsividade
+@media (max-width: 1400px)
+    .intro 
+        text-align: center
+        width: 100%
+        
+        .intro-text
+            width: 100%
+            align-items: center
+
+            .intro-slogan
+                margin-bottom: 3rem
+                margin-right: 0
+
+            .intro-btn
+                margin-bottom: 4rem
+
+        .img-intro
+            margin: auto
+            width: 70%
+
+
+
+
 
 @media (max-width: 960px)
     header 
