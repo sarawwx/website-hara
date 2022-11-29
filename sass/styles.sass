@@ -21,7 +21,7 @@ header
     background: variables.$blue
     // position: relative
     width: 100%
-    padding: 1.5rem 6.5rem
+    padding: 1rem 6rem
     display: flex
     flex-direction: column
     justify-content: space-between
@@ -41,12 +41,13 @@ header
             transition-property: color
         a:hover
             color: variables.$green-light
+            text-decoration: overline
         // a:not(:last-child)
         //     margin-right: 1.875rem
 
 .logo-header
         position: relative
-        max-width: 5rem
+        max-width: 6rem
         max-height: 9.375rem
         padding: 0 1rem
         width: auto
@@ -219,7 +220,7 @@ label
 
 @media (max-width: 560px) 
     header
-        padding: 0.5rem 2rem
+        padding: 0.8rem 2rem
 
     #check:checked ~ header .navigation a
         font-size: 1.5rem

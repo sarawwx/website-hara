@@ -17,7 +17,7 @@ body {
 header {
   background: #61b1c2;
   width: 100%;
-  padding: 1.5rem 6.5rem;
+  padding: 1rem 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -38,11 +38,12 @@ header .navigation a {
 }
 header .navigation a:hover {
   color: #848d62;
+  text-decoration: overline;
 }
 
 .logo-header {
   position: relative;
-  max-width: 5rem;
+  max-width: 6rem;
   max-height: 9.375rem;
   padding: 0 1rem;
   width: auto;
@@ -220,7 +221,7 @@ label {
 }
 @media (max-width: 560px) {
   header {
-    padding: 0.5rem 2rem;
+    padding: 0.8rem 2rem;
   }
   #check:checked ~ header .navigation a {
     font-size: 1.5rem;
