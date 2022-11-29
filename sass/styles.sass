@@ -53,15 +53,15 @@ header
 ////////////////// fim header
 
 section 
-    // position: relative
+    position: relative
     width: 100%
     min-height: 100vh
     display: flex
     flex-direction: column
-    // justify-content: flex-start
+    justify-content: flex-start
 
 .content
-    max-width: 90%
+    max-width: 100%
     margin: 5rem 10rem
 
 ////////////////// introdução
@@ -104,6 +104,7 @@ section
 
         .img-intro
             width: 40%
+            margin-bottom: 2rem
 //////////////////////////////// fim introdução
 
 .logo01
@@ -114,14 +115,19 @@ label
     z-index: 3
     display: none
 
+
+
+
+
 ///////////////////////////// responsividade
 @media (max-width: 1400px)
     .intro 
         text-align: center
         width: 100%
+        justify-content: center
         
         .intro-text
-            width: 100%
+            width: 90%
             align-items: center
 
             .intro-slogan
@@ -133,10 +139,7 @@ label
 
         .img-intro
             margin: auto
-            width: 70%
-
-
-
+            width: 90%
 
 
 @media (max-width: 960px)
@@ -144,11 +147,12 @@ label
         justify-content: space-between
         display: flex
         flex-direction: row
+        padding: 1rem 4rem
         
         .logo01
             position: relative
             display: flex
-            max-width: 3rem
+            max-width: 4rem
             // max-height: 9.375rem
     
         .navigation
@@ -157,7 +161,7 @@ label
         label
             color: variables.$orange
             display: block
-            font-size: 25px
+            font-size: 2.5rem
             cursor: pointer
             transition: 0.3s
             transition-property: color  
@@ -172,13 +176,6 @@ label
 
     .logo-header
         display: none 
-    
-    .content .intro h2
-        display: flex
-        flex-direction: column
-        font-size: 3rem
-        line-height: 3rem
-    
 
     #check:checked ~header .navigation
         z-index: 2
@@ -203,17 +200,40 @@ label
         display: block
         position: fixed
 
+    .content
+        margin: 5rem
+
+        .intro 
+            .intro-text
+                .intro-slogan
+                        font-size: 3rem
+                        margin-bottom: 1.5rem
+                .intro-btn
+                        margin-bottom: 3rem
+
+            .img-intro
+                margin: auto
+                width: 100%
 
 @media (max-width: 560px) 
-    .content 
-        display: flex
-        flex-direction: column
-        max-width: 200%
-        
-        .intro 
-            justify-content: space-between
+    header
+        padding: 0.5rem 2rem
 
-            h2
-                font-size: 2rem
-                line-height: 2rem
-    
+    .content
+        margin: 2rem
+
+        .intro
+            .intro-text
+                .intro-slogan
+                    font-size: 2rem
+                    margin-bottom: 1rem
+                    line-height: 2.5rem
+
+                .intro-btn
+                    font-size: 0.9rem
+                    width: 9rem
+                    margin-bottom: 1.5rem
+                    padding: 0.8rem
+
+    .intro .img-intro
+        width: 90%
