@@ -138,6 +138,22 @@ section {
   height: 20rem;
 }
 
+.section03 {
+  margin: 5rem;
+}
+.section03 .title-section03 {
+  background: url(/img/hibiscus.png) no-repeat;
+  background-size: 5rem;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Ultra";
+  letter-spacing: 0.2rem;
+  color: #8201A6;
+  padding: 2rem 10rem;
+}
+
 @media (max-width: 1400px) {
   .intro .intro-text {
     width: 50%;
