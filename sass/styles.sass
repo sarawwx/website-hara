@@ -136,6 +136,7 @@ label
 
             .intro-btn
                 margin-bottom: 4rem
+                width: auto
 
         .img-intro
             margin: auto
@@ -190,15 +191,15 @@ label
         justify-content: center
         align-items: center
     #check:checked ~ header .navigation a
-        // margin-right: 0
         margin-bottom: 3rem
         letter-spacing: 0.5rem
+        font-size: 2rem
     #check:checked ~ header label .menu-btn
         display: none
     #check:checked ~ header label .close-btn
-        z-index: 2
+        z-index: 3
         display: block
-        position: fixed
+        position: relative
 
     .content
         margin: 5rem
@@ -206,18 +207,22 @@ label
         .intro 
             .intro-text
                 .intro-slogan
-                        font-size: 3rem
-                        margin-bottom: 1.5rem
+                    font-size: 3rem
+                    margin-bottom: 1.5rem
                 .intro-btn
-                        margin-bottom: 3rem
+                    font-size: 1.2rem
+                    margin-bottom: 3rem
 
             .img-intro
                 margin: auto
-                width: 100%
+                width: 90%
 
 @media (max-width: 560px) 
     header
         padding: 0.5rem 2rem
+
+    #check:checked ~ header .navigation a
+        font-size: 1.5rem
 
     .content
         margin: 2rem

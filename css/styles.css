@@ -134,6 +134,7 @@ label {
   }
   .intro .intro-text .intro-btn {
     margin-bottom: 4rem;
+    width: auto;
   }
   .intro .img-intro {
     margin: auto;
@@ -191,14 +192,15 @@ label {
   #check:checked ~ header .navigation a {
     margin-bottom: 3rem;
     letter-spacing: 0.5rem;
+    font-size: 2rem;
   }
   #check:checked ~ header label .menu-btn {
     display: none;
   }
   #check:checked ~ header label .close-btn {
-    z-index: 2;
+    z-index: 3;
     display: block;
-    position: fixed;
+    position: relative;
   }
   .content {
     margin: 5rem;
@@ -208,16 +210,20 @@ label {
     margin-bottom: 1.5rem;
   }
   .content .intro .intro-text .intro-btn {
+    font-size: 1.2rem;
     margin-bottom: 3rem;
   }
   .content .intro .img-intro {
     margin: auto;
-    width: 100%;
+    width: 90%;
   }
 }
 @media (max-width: 560px) {
   header {
     padding: 0.5rem 2rem;
+  }
+  #check:checked ~ header .navigation a {
+    font-size: 1.5rem;
   }
   .content {
     margin: 2rem;
