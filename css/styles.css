@@ -58,30 +58,50 @@ header .navigation a:hover {
 }
 
 .content {
-  max-width: 650px;
-  margin: 60px 100px;
+  max-width: 90%;
+  margin: 5rem 10rem;
 }
-.content .intro h2 {
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.intro .intro-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.intro .intro-text .intro-slogan {
   color: #5A6C37;
   font-family: "DM Sans";
   font-size: 3.4375rem;
   font-weight: 800;
   letter-spacing: 0.2rem;
   line-height: 3.75rem;
-  margin-bottom: 1.875rem;
+  margin-bottom: 5rem;
+  margin-right: 3rem;
 }
-.content .intro-btn {
+.intro .intro-text .intro-btn {
   color: #fff;
   background: #8201A6;
   font-weight: 700;
-  letter-spacing: 2px;
-  padding: 10px 20px;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem;
+  width: 14rem;
   border-radius: 5px;
   transition: 0.3s;
   transition-property: background;
 }
-.content .intro-btn:hover {
+.intro .intro-text .intro-btn:hover {
   background: #EE8A26;
+}
+.intro .img-intro {
+  width: 40%;
 }
 
 .logo01 {
