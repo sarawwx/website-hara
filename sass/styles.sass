@@ -141,7 +141,7 @@ section
 ////////////// **section03
 
 .section03
-    margin: 5rem
+    margin: 5rem 2rem
 
     .title-section03
         background: url(/img/logo-opacity.png)  no-repeat
@@ -155,29 +155,86 @@ section
         font-family: 'Ultra'
         letter-spacing: 0.2rem
         color: variables.$purple
-        padding: 2rem 10rem
+        padding: 1.2rem 0
+        margin-bottom: 1rem
     
-    .gallery 
-        display: flex
-        flex-direction: row
-        flex-wrap: wrap
-        justify-content: center
-        align-items: center
-        padding: 0 0.2rem
+    // .gallery 
+    //     display: flex
+    //     flex-direction: row
+    //     flex-wrap: wrap
+    //     justify-content: center
+    //     // align-items: center
+    //     padding: 0 0.2rem
     
-    .gallery img 
-        width: 25%
-        height: 10rem
-        object-fit: cover
-        margin-top: 0.5rem
-        padding: 0 0.2rem
-        // border-radius: 10px
+    //     img 
+    //         display: block
+    //         width: 15rem
+    //         height: 12rem
+    //         object-fit: cover
+    //         margin-top: 0.5rem
+    //         padding: 0 0.2rem
+            // border-radius: 10px
     
 
     // .gallery img 
     //     @media: (width: 50%)
     //     @media: (max-width: 800px)
     
+
+
+
+
+@keyframes display 
+  0% 
+    transform: translateX(200px)
+    opacity: 0
+  
+  10% 
+    transform: translateX(0)
+    opacity: 1
+  
+  20% 
+    transform: translateX(0)
+    opacity: 1
+  
+  30% 
+    transform: translateX(-200px)
+    opacity: 0
+  
+  100% 
+    transform: translateX(-200px)
+    opacity: 0
+  
+
+
+.pic-ctn 
+  position: relative
+  width: 100vw
+  height: 300px
+  padding: 2rem
+  margin-bottom: 2rem
+
+
+.pic 
+  position: absolute
+  top: 0
+  left: calc(50% - 100px)
+  padding: 1rem
+  opacity: 0
+  animation: display 10s infinite
+
+
+img:nth-child(2) 
+  animation-delay: 2s
+
+img:nth-child(3) 
+  animation-delay: 4s
+
+img:nth-child(4) 
+  animation-delay: 6s
+
+img:nth-child(5) 
+  animation-delay: 8s
 
 
 
@@ -283,7 +340,12 @@ section
                 margin: auto
                 width: 95%
 
-@media (max-width: 560px) 
+    // .section03
+    //     .gallery
+            
+
+
+@media (max-width: 650px) 
     header
         padding: 0.8rem 2rem
 
@@ -308,3 +370,18 @@ section
 
     .intro .img-intro
         width: 90%
+
+    .section02
+        .who-we-are
+            .quem-somos
+                width: 20rem
+                font-size: 1.2rem
+                height: 21rem
+
+    .section03
+        margin: 1rem
+
+        .title-section03
+            font-size: 1.2rem
+            padding: 1rem 0.5rem
+            background-size: 3rem
