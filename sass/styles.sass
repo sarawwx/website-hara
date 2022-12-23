@@ -52,7 +52,7 @@ header
         padding: 0 1rem
         width: auto
 
-.logo01
+.logo-main
     display: none
 label
     display: none
@@ -169,14 +169,11 @@ section
         position: relative
         
         .carousel
-            margin-bottom: 2rem
+            // margin-bottom: 2rem
             width: 60%
             max-height: 20rem
-            position: absolute
+            position: relative
             top: 0
-            display: flex
-            flex-direction: column
-            justify-items: center
             
             @keyframes display 
                 0% 
@@ -213,30 +210,6 @@ section
                 animation-delay: 8s
 
 
-    // .gallery 
-    //     display: flex
-    //     flex-direction: row
-    //     flex-wrap: wrap
-    //     justify-content: center
-    //     // align-items: center
-    //     padding: 0 0.2rem
-    
-    //     img 
-    //         display: block
-    //         width: 15rem
-    //         height: 12rem
-    //         object-fit: cover
-    //         margin-top: 0.5rem
-    //         padding: 0 0.2rem
-            // border-radius: 10px
-    
-
-    // .gallery img 
-    //     @media: (width: 50%)
-    //     @media: (max-width: 800px)
-    
-
-
 
 
 ///////////////////////////// responsividade
@@ -256,6 +229,8 @@ section
             margin: auto
             width: 50%
 
+            
+
 
 @media (max-width: 960px)
     header 
@@ -264,7 +239,7 @@ section
         flex-direction: row
         padding: 1rem 4rem
         
-        .logo01
+        .logo-main
             position: relative
             display: flex
             max-width: 4rem
