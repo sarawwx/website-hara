@@ -111,7 +111,7 @@ section {
   transition: 0.3s;
   transition-property: background;
 }
-.intro .intro-text .intro-btn .intro-btn:hover {
+.intro .intro-text .intro-btn:hover {
   background: #EE8A26;
 }
 .intro .img-intro {
