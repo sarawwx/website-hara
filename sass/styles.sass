@@ -163,42 +163,35 @@ section
         margin-bottom: 1rem
     
     .pic-ctn 
-        width: 100%
-        height: 50rem
-        padding: 2rem
+        width: 61%
+        height: 40rem
         position: relative
-        
-        .carousel
-            // margin-bottom: 2rem
-            width: 60%
-            max-height: 20rem
-            position: relative
-            top: 0
+        top: 0
             
-            @keyframes display 
-                0% 
-                    transform: translateX(200px)
-                    opacity: 0
-                10% 
-                    transform: translateX(0)
-                    opacity: 1
-                20% 
-                    transform: translateX(0)
-                    opacity: 1
-                30% 
-                    transform: translateX(-200px)
-                    opacity: 0
-                100% 
-                    transform: translateX(-200px)
-                    opacity: 0
+        @keyframes display 
+            0% 
+                transform: translateX(200px)
+                opacity: 0
+            10% 
+                transform: translateX(0)
+                opacity: 1
+            20% 
+                transform: translateX(0)
+                opacity: 1
+            30% 
+                transform: translateX(-200px)
+                opacity: 0
+            100% 
+                transform: translateX(-200px)
+                opacity: 0
             
-            .pic 
-                position: absolute
-                padding: 1rem
-                left: calc(50% - 100px)
-                animation: display 10s infinite
-                max-width: 80rem
-                height: 40rem
+        .pic 
+            position: absolute
+            padding: 1rem
+            left: calc(50% - 100px)
+            animation: display 10s infinite
+            max-width: 80rem
+            height: 40rem
 
             img:nth-child(2) 
                 animation-delay: 2s
@@ -229,7 +222,13 @@ section
             margin: auto
             width: 50%
 
-            
+    .section03
+        .pic-ctn 
+            height: 30rem
+
+            .pic
+                max-width: 60rem
+                height: 30rem
 
 
 @media (max-width: 960px)
@@ -316,7 +315,6 @@ section
     // .section03
     //     .gallery
             
-
 
 @media (max-width: 650px) 
     header
