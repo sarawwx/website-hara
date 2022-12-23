@@ -193,16 +193,16 @@ section {
   max-width: 80rem;
   height: 40rem;
 }
-.section03 .pic-ctn .pic img:nth-child(2) {
+.section03 .pic-ctn img:nth-child(2) {
   animation-delay: 2s;
 }
-.section03 .pic-ctn .pic img:nth-child(3) {
+.section03 .pic-ctn img:nth-child(3) {
   animation-delay: 4s;
 }
-.section03 .pic-ctn .pic img:nth-child(4) {
+.section03 .pic-ctn img:nth-child(4) {
   animation-delay: 6s;
 }
-.section03 .pic-ctn .pic img:nth-child(5) {
+.section03 .pic-ctn img:nth-child(5) {
   animation-delay: 8s;
 }
 
